@@ -1,0 +1,18 @@
+[
+  { "query": "Where can I ask about enrollment?", "relevant": ["enrollment"] },
+  { "query": "How do I get a lost ID replaced?", "relevant": ["lost id replacement", "student id inside the library"] },
+  { "query": "library hours during finals", "relevant": ["library extends operating hours"] },
+  { "query": "shuttle schedule for the campus", "relevant": ["shuttle schedule"] },
+  { "query": "who can help me with counseling", "relevant": ["counseling", "guidance"] },
+  { "query": "is the wifi in the laboratory working", "relevant": ["wifi signal"] },
+  { "query": "air conditioner broken in classroom", "relevant": ["air conditioning"] },
+  { "query": "found a wallet or keys", "relevant": ["black wallet", "set of keys"] },
+  { "query": "buying second hand calculator", "relevant": ["second-hand engineering calculator", "scientific calculator"] },
+  { "query": "dress code rules", "relevant": ["dress code"] },
+  { "query": "can I use AI for my coursework", "relevant": ["use of ai tools"] },
+  { "query": "grade appeal", "relevant": ["grading appeals", "grade consultation"] },
+  { "query": "career events for students", "relevant": ["career fair"] },
+  { "query": "scholarship or financial help", "relevant": ["scholarship applications", "food assistance"] },
+  { "query": "thesis adviser", "relevant": ["thesis advising"] },
+  { "query": "free clinic consultation", "relevant": ["clinic consultations", "free consultation week"] }
+]

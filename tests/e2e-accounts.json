@@ -1,0 +1,10 @@
+{
+  "password": "12345678",
+  "students": {
+    "main": { "email": "e2e.main@dlsau.edu.ph", "username": "e2e-main", "displayName": "E2E Main Student" },
+    "reject": { "email": "e2e.reject@dlsau.edu.ph", "username": "e2e-reject", "displayName": "E2E Reject Student" },
+    "anon": { "email": "e2e.anon@dlsau.edu.ph", "username": "e2e-anon", "displayName": "E2E Anon Student" },
+    "reporter": { "email": "e2e.reporter@dlsau.edu.ph", "username": "e2e-reporter", "displayName": "E2E Reporter Student" },
+    "guard": { "email": "e2e.guard@dlsau.edu.ph", "username": "e2e-guard", "displayName": "E2E Guard Student" }
+  }
+}

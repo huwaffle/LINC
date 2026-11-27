@@ -1,0 +1,50 @@
+{
+  "name": "linc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "e2e": "tsx --env-file=.env.local scripts/seed-ads.ts && tsx --env-file=.env.local scripts/seed-e2e-users.ts && node tests/e2e-check.mjs",
+    "verify": "tsc --noEmit && vitest run",
+    "verify:e2e": "node scripts/verify-e2e.mjs",
+    "db:reset": "tsx --env-file=.env.local scripts/reset-db.ts",
+    "db:seed-accounts": "tsx --env-file=.env.local scripts/seed-demo-accounts.ts",
+    "db:seed-e2e": "tsx --env-file=.env.local scripts/seed-e2e-users.ts",
+    "db:seed-ads": "tsx --env-file=.env.local scripts/seed-ads.ts",
+    "topics:sync": "tsx --env-file=.env.local scripts/sync-topics.ts",
+    "db:migrate": "tsx --env-file=.env.local scripts/migrate.ts",
+    "ml:train": "tsx scripts/ml-train.ts",
+    "ml:eval-search": "tsx --env-file=.env.local scripts/ml-eval-search.ts",
+    "worker": "tsx --env-file=.env.local scripts/worker.ts",
+    "seed:more": "tsx --env-file=.env.local scripts/top-up-posts.ts",
+    "seed": "tsx --env-file=.env.local scripts/seed.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.2",
+    "jose": "^6.1.0",
+    "next": "^16.4.6",
+    "postgres": "^3.4.9",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "playwright-core": "^1.64.1",
+    "tailwindcss": "^4.1.17",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
